@@ -1,0 +1,52 @@
+<html>
+<head>
+	<title>About Me</title>
+	<link href="https://fonts.googleapis.com/css2?family=Gotu&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+		<link rel="stylesheet" type="text/css" href="about.css">
+</head>
+<body>
+	<div class="background">
+		<div class="back">
+			<a href="myinfo1.html"></a>
+			<img src="pics/back1.png">
+			<div class="hel">BACK</div>
+		</div>
+		<div class="text">
+			<h1>about me</h1>
+				<h2>I am a dedicated and curious student of Charotar University of Science And Techonology currently pursuing the Computer Science Engineering course.</h2>
+
+				I love tackling complex problems and cracking my way through that wall till I find the best solution.I also love the logic and structure of coding and always strive to gain as much knowledge I can in the field of coding!
+				When I want to take a break from geeking around with coding, I like to spend my time sketching,photography, making digital art and so on.
+		</div>	
+		<div id="more">
+			Other than that, you can often find enthusiastically taking up leadership responsiblities.<br>
+			For example:<br>
+			1)I am currently the Campus Ambassador of the University.<br>
+			2)I am also the member of the Central Council.<br>
+			<br>
+			Apart from this I have also been a part of the NSS Unit at our university on regular basis. As a part of this unit I have worked as a student tuition teacher for the village kids, been to the camps,etc. Working with my fellow students at the camp was not only inspiring and satisfing, but also made me see how great I am at solving problems in a tense situation and how to interact with others so that the work is done efficiently while maintaining the team's high spirit.<br>
+			I think all this describes my personality almost as accurately as you can without meeting me in person!
+		</div>
+		<div id="flip" onclick="flip()">
+		MORE
+	</div>
+	</div>
+	
+	<script >
+		$('#flip').click(function(){
+			$('.text').animate({height: "toggle", opacity: "toggle"}, "slow");
+			var x=document.getElementById("flip");
+				if(x.innerHTML==="BACK")
+				{
+					x.innerHTML="MORE";
+				}
+				else
+				{
+					x.innerHTML="BACK";
+				}
+		});
+	</script>
+</body>
+</html>

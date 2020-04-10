@@ -1,0 +1,115 @@
+<html>
+<head>
+	<title>Skills</title>
+	<link href="https://fonts.googleapis.com/css2?family=Gotu&display=swap" rel="stylesheet">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+		<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap" rel="stylesheet">
+		<link rel="stylesheet" type="text/css" href="skills.css">
+</head>
+<body>
+
+	<div id="title">SKILLS
+	</div>
+	<div class="back">
+			<a href="myinfo1.html"></a>
+			<img src="pics/back1.png">
+			<div class="hel">BACK</div>
+		</div>
+	<div id="background">
+
+	<div id="skills">
+		<div class="flip">
+			<h1>TECHNICAL SKILLS</h1>
+			<ul>
+				<li >App Development:
+					<ul>
+						<li >Android Studio</li>
+						<li >Flutter</li>
+					</ul>
+				</li>
+				<li >Web Development
+				</li>
+				<li >Adobe Photoshop</li>
+				<li >Adobe Flash</li>
+				<li >Adobe Dreamweaver</li>
+				<li >CorelDRAW</li>
+				<li >Microsoft Office</li>
+				<li >Aframe.io</li>
+			</ul>
+		</div>
+		<div class="soft">
+			<h1>SOFT SKILLS</h1>
+			<ul>
+				
+				<li>Leadership</li>
+				<li>Mass Communication</li>
+				<li>Time Management</li>
+				<li>Workaholic</li>
+				<li>Adaptability</li>
+				<li>Creativity</li>
+				<li>Interpersonal skills</li>
+				<li>Observant</li>
+
+			</ul>
+		</div>
+	</div>
+	<div id="images">
+		<div class="flip">
+			<table id="slide1">
+				<tr>
+					<td ><img src="pics/studio.png"></td>
+					<td ><img src="pics/flutter.png"></td>
+					<td ><img src="pics/wd.png"></td>
+				</tr>
+				<tr>
+					<td><img src="pics/ps.png"></td>
+					<td><img src="pics/Flash.png"></td>
+					<td><img src="pics/dw.png"></td>
+				</tr>
+				<tr>
+					<td><img src="pics/cd.png"></td>
+					<td><img src="pics/mo.png"></td>
+					<td><img src="pics/aframe.png"></td>
+				</tr>
+			</table>
+		</div>
+		<div class="soft">
+			<table id="slide2">
+				<tr>
+					<td ><img src="pics/lead.jpg"></td>
+					<td ><img src="pics/com.png"></td>
+				</tr>
+				<tr>
+					<td><img src="pics/time.png"></td>
+					<td><img src="pics/workaholic.png"></td>
+				</tr>
+				<tr>
+					<td><img src="pics/adapt.png"></td>
+					<td><img src="pics/creativity.png"></td>
+				</tr>
+				<tr>
+					<td><img src="pics/interp.jpg"></td>
+					<td><img src="pics/obs.png"></td>
+				</tr>
+			</table>
+		</div>
+	</div>
+	<div id="more">MORE</div>
+
+	<script >
+
+		$('#more').click(function(){
+			$('.flip').animate({height: "toggle", opacity: "toggle"}, "slow");
+			var x=document.getElementById("more");
+				if(x.innerHTML==="BACK")
+				{
+					x.innerHTML="MORE";
+				}
+				else
+				{
+					x.innerHTML="BACK";
+				}
+		});
+	</script>
+</body>
+</html>

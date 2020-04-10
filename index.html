@@ -1,0 +1,42 @@
+<html>
+	<head>
+		<link rel="stylesheet" type="text/css" href="css/my_portfolio.css">
+		<link href="https://fonts.googleapis.com/css?family=Poiret+One&display=swap" rel="stylesheet">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+		<title>My Portfolio</title>
+	</head>
+	<body >
+
+		<div class="main">
+			<h1>WELCOME</h1>
+			
+			<H2>Hi! My name is Dax M. Patel.
+				<br><br>To know more about me start
+				<br>my laptop.
+				<span ></span>
+			</H2>
+			<div class="slide">
+
+				<div class="startlaptop">
+					<span class="click"></span>
+				</div>
+				<div class="start">
+					<img src="css/pics/startbackground.png">
+					<h1 id="hi">Hi,Dax!</h1>
+					<a href="css/myinfo1.html"><p >Let's Go!</p></a>
+				</div>	
+			</div>
+		</div>
+		<script>
+			$('span').click(function(){
+			$('.startlaptop').animate({height: "toggle", opacity: "toggle"}, "slow");
+			$('#hi').delay(1000).animate({left:"125",fontSize:"60px", top:"-32px"},"slow");
+			$('img').delay(1000).animate({borderRadius:60,left:"110",width:"110px",height:"72px",top:"85"},"slow");
+			$('p').delay(1200).animate({opacity:1});
+			});
+
+
+		</script>
+		
+	</body>
+</html>

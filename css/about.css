@@ -1,0 +1,121 @@
+body{
+	margin: 0;
+	
+}
+.back a{
+	position: absolute;
+	top:0;
+	left:0;
+	z-index: 50;
+	width:100px;
+	height:40px; 
+}
+.back{
+	position: relative;
+	height: 40px;
+	width: 100px;
+	top:50px;
+	font-family: 'Gotu',sans-serif;
+	font-weight: bold;
+	color:white;
+	left:100px;
+	text-align: center;
+	background-color: #d51010;
+	border:2px solid black;
+	border-radius: 30px;
+	transition: 0.5s;
+	transition-timing-function: ease-in-out;
+	cursor: pointer;
+}
+.back img{
+	margin-top: 3px;
+	height: 30px;
+	float:left;
+}
+.hel{
+	position:absolute;
+	top: 3px; 
+	left:40px;
+	padding: 5px;
+}
+.back:hover{
+
+	color: white;
+	cursor: pointer;
+	background: black;
+	border-color:#d51010;
+}
+.background{
+	width: 100%;
+	height: 100%;
+	font-family: 'Gotu',sans-serif;
+
+	background-image: url(pics/loginbackground.jpg);
+	background-size: cover;
+}
+h1{
+	font-size: 80px;
+	font-family: 'Lobster';
+	font-weight: normal;
+	margin:0px 0 30px 0;
+}
+h2{
+	font-size: 20px;
+	border-bottom: 1px solid #d51010;
+}
+.text{
+	position: absolute;
+	z-index: 3;
+	color:white;
+	margin-top:100px;
+	margin-left:100px;
+	margin-bottom:0px;
+	padding:50px;
+	padding-top:20px;
+	background-color: black;
+	border-radius: 30px;
+	border:2px solid #d51010; 
+	width: 600px;
+	float: left;
+	height:50%;
+	
+}
+#flip{
+	position: absolute;
+	height: 40px;
+	width: 100px;
+	bottom:100px;
+	font-family: 'Gotu',sans-serif;
+	font-weight: bold;
+	color:white;
+	left:700px;
+	z-index: 5;
+	text-align: center;
+	background-color: #d51010;
+	border-radius: 30px;
+	border:2px solid black;
+	transition: 0.5s;
+	transition-timing-function: ease-in-out;
+	padding: 10px 0 0 0 ;
+
+}
+#flip:hover{
+	cursor: pointer;
+	background: black;
+	border-color: red;
+}
+#more{
+	
+	color:white;
+	margin-top:100px;
+	margin-left:100px;
+	margin-bottom:0px;
+	padding:50px;
+	padding-top:20px;
+	background-color: black;
+	border-radius: 30px;
+	border:2px solid #d51010; 
+	width: 600px;
+	float: left;
+	height:50%;
+}
